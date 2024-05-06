@@ -1,6 +1,7 @@
 {
     "appTitle": "My app",
     "content": "Hello",
-    "onboarding": "{name, select, onBoardingTitle1{Discover your best university version!} onBoardingSubTitle1{Welcome to UCC well-being, where well-being and academic success go hand in hand} other{}}",
-    "login": "{name, select, loginTitle{Welcome back,} loginSubTitle{Discover Limitless Choices and Unmatched Convenience.} email{E-Mail} password{Password} rememberMe{Remember Me} forgetPassword{Forget Password?} signIn{Sign In} createAccount{Create Account} orSignInWith{Or Sign in With} other{}}"
+    "onboarding": "{name, select, onBoardingTitle1{Discover your best university version!} onBoardingSubTitle1{Welcome to UCC well-being, where well-being and academic success go hand in hand} onBoardingLogin{Login} onBoardingRegister{Register} other{}}",
+    "login": "{name, select, loginTitle{Login here} loginSubTitle{Welcome back you’ve been missed!} email{E-Mail} password{Password} rememberMe{Remember Me} forgetPassword{Forgot your password?} signIn{Sign In} createAccount{Create new account} orSignInWith{Or Sign in With} other{}}",
+    "createAccount": "{name, select, createAccountTitle{Create Account} createAccountSubTitle{Create an account so you can register your participation in activities} email{E-Mail} password{Password} confirmPassword{Confirm Password} signUp{Sign Up} alreadyAcount{Already have an account} orSignInWith{Or Sign in With} other{}}"
 }

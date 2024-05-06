@@ -3,10 +3,10 @@ import 'package:flutter_ucc_welfare_project/modules/authentication/controllers/o
 import 'package:get/get.dart';
 
 // import 'package:app_mobile/modules/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_elevated_button.dart';
-import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
+// import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_elevated_button.dart';
+// import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_skip.dart';
+// import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/image_strings.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/text_strings.dart';
 
@@ -30,27 +30,8 @@ class OnBoardingScreen extends StatelessWidget {
                 title: AppText.onBoardingTitle1,
                 subTitle: AppText.onBoardingSubTitle1,
               ),
-              // OnBoardingPage(
-              //   image: AppImage.onBoardingImage2,
-              //   title: AppText.onBoardingTitle2,
-              //   subTitle: AppText.onBoardingSubTitle2,
-              // ),
-              // OnBoardingPage(
-              //   image: AppImage.onBoardingImage3,
-              //   title: AppText.onBoardingTitle3,
-              //   subTitle: AppText.onBoardingSubTitle3,
-              // ),
             ],
           ),
-
-          /// Skip button
-          // const OnBoardingSkip(), #Eliminar archivo
-
-          /// Dot navigation SmoothPageIndicator
-          // const OnBoardingDotNavigation(), #Eliminar archivo
-
-          /// Circular button
-          // const OnBoardingElevatedButton(),
         ],
       ),
     );

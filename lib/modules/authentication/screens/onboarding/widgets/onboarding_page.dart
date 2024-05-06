@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_ucc_welfare_project/modules/authentication/controllers/onboarding/onboarding_controller.dart';
 
 import 'package:flutter_ucc_welfare_project/utils/constants/sizes.dart';
+import 'package:flutter_ucc_welfare_project/utils/constants/text_strings.dart';
 import 'package:flutter_ucc_welfare_project/utils/helpers/helper_functions.dart';
+// import 'package:get/get.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
@@ -15,6 +18,7 @@ class OnBoardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get.put(OnBoardingController());
     return Padding(
       padding: const EdgeInsets.all(AppSizes.defaultSpace),
       child: Column(
@@ -36,17 +40,27 @@ class OnBoardingPage extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
 
-          const Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          const Spacer(), // Añadido para empujar los botones hacia la parte inferior
+          Row(
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              ElevatedButton(
-                onPressed: null, 
-                child: Text("Iniciasr sesion")
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: () {
+                    // Lógica para iniciar sesión
+                  }, 
+                  child: Text(AppText.onBoardingLogin),
+                ),
               ),
-              ElevatedButton(
-                onPressed: null, 
-                child: Text("Registrar")
-              )
+              const SizedBox(width: 8), // Espacio entre botones
+              Expanded(
+                child: OutlinedButton(
+                  onPressed: () {
+                    // Lógica para el registro
+                  }, 
+                  child: Text(AppText.onBoardingRegister),
+                ),
+              ),
             ],
           ),
         ],

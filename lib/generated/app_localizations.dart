@@ -108,14 +108,20 @@ abstract class AppLocalizations {
   /// No description provided for @onboarding.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, onBoardingTitle1{¡Descubre tu mejor versión universitaria!} onBoardingSubTitle1{Bienvenido a bienestar UCC, donde el bienestar y el éxito académico van de la mano} other{}}'**
+  /// **'{name, select, onBoardingTitle1{¡Descubre tu mejor versión universitaria!} onBoardingSubTitle1{Bienvenido a bienestar UCC, donde el bienestar y el éxito académico van de la mano} onBoardingLogin{Acceder} onBoardingRegister{Registrarse} other{}}'**
   String onboarding(String name);
 
   /// No description provided for @login.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, loginTitle{Bienvenido de nuevo,} loginSubTitle{Descubra opciones ilimitadas y una comodidad inigualable.} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Recuperar contraseña?} signIn{Iniciar sesión} createAccount{Crear cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  /// **'{name, select, loginTitle{Inicia sesión aquí} loginSubTitle{Bienvenido de nuevo, te han echado de menos!} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Olvidaste tu contraseña?} signIn{Iniciar sesión} createAccount{Crear nueva cuenta} orSignInWith{O inicie sesión con} other{}}'**
   String login(String name);
+
+  /// No description provided for @createAccount.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, createAccountTitle{Crear Cuenta} createAccountSubTitle{Crea una cuenta para que puedas registrar tu participacion en actividades} email{Correo electrónico} password{Contraseña} confirmPassword{Confirmar Contraseña} signUp{Registrarse} alreadyAcount{Ya tengo una cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  String createAccount(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

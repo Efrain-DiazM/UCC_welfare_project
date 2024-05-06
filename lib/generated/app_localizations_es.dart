@@ -19,6 +19,8 @@ class AppLocalizationsEs extends AppLocalizations {
       {
         'onBoardingTitle1': '¡Descubre tu mejor versión universitaria!',
         'onBoardingSubTitle1': 'Bienvenido a bienestar UCC, donde el bienestar y el éxito académico van de la mano',
+        'onBoardingLogin': 'Acceder',
+        'onBoardingRegister': 'Registrarse',
         'other': '',
       },
     );
@@ -30,14 +32,33 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.selectLogic(
       name,
       {
-        'loginTitle': 'Bienvenido de nuevo,',
-        'loginSubTitle': 'Descubra opciones ilimitadas y una comodidad inigualable.',
+        'loginTitle': 'Inicia sesión aquí',
+        'loginSubTitle': 'Bienvenido de nuevo, te han echado de menos!',
         'email': 'Correo electrónico',
         'password': 'Contraseña',
         'rememberMe': 'Recuérdame',
-        'forgetPassword': 'Recuperar contraseña?',
+        'forgetPassword': 'Olvidaste tu contraseña?',
         'signIn': 'Iniciar sesión',
-        'createAccount': 'Crear cuenta',
+        'createAccount': 'Crear nueva cuenta',
+        'orSignInWith': 'O inicie sesión con',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String createAccount(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'createAccountTitle': 'Crear Cuenta',
+        'createAccountSubTitle': 'Crea una cuenta para que puedas registrar tu participacion en actividades',
+        'email': 'Correo electrónico',
+        'password': 'Contraseña',
+        'confirmPassword': 'Confirmar Contraseña',
+        'signUp': 'Registrarse',
+        'alreadyAcount': 'Ya tengo una cuenta',
         'orSignInWith': 'O inicie sesión con',
         'other': '',
       },

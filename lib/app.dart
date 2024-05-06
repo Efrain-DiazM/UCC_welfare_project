@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_ucc_welfare_project/generated/app_localizations.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/createAccount/createAccount.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/login/login.dart';
 import 'package:flutter_ucc_welfare_project/modules/authentication/screens/onboarding/onboarding.dart';
 import 'package:flutter_ucc_welfare_project/utils/theme/theme.dart';
 import 'package:get/get.dart';
@@ -15,10 +17,10 @@ class App extends StatelessWidget{
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const OnBoardingScreen(),
+      home: const createAccount(),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      locale: const Locale('en', ''),
+      locale: const Locale('es', ''),
     );
   }
 }

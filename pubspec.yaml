@@ -20,7 +20,9 @@ dependencies:
 
   iconsax: ^0.0.8
   cupertino_icons: ^1.0.6
+
   get: ^4.6.6
+  flutter_svg: ^2.0.10+1
   flutter_localization: ^0.2.0
 
 dev_dependencies:
