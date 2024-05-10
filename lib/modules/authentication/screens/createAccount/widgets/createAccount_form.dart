@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/login/login.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/sizes.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/text_strings.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class CreateAccountForm extends StatelessWidget {
@@ -52,7 +54,9 @@ class CreateAccountForm extends StatelessWidget {
             const SizedBox(height: AppSizes.spaceBtwItems),
 
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(const LoginScreen());
+              },
               child: Text(AppText.alreadyAcount),
             ),
           ],

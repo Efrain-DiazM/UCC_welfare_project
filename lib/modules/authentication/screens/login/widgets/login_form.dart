@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ucc_welfare_project/modules/activities/screens/list_activity.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/createAccount/createAccount.dart';
 // import 'package:flutter/widgets.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/sizes.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/text_strings.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {
@@ -48,14 +51,18 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const ListActivity());
+                },
                 child: Text(AppText.signIn),
               ),
             ),
             const SizedBox(height: AppSizes.spaceBtwItems),
 
             TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(const createAccount());
+              },
               child: Text(AppText.createAccount),
             ),
           ],

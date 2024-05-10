@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413035600544",
+    "project_id": "ucc-welfare",
+    "storage_bucket": "ucc-welfare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413035600544:android:b28bbb96287bbd93b187c5",
+        "android_client_info": {
+          "package_name": "com.example.app_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsVeWMTN6labDMdawJ27dp51F71hBCVqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413035600544:android:bcefbc2110aa614ab187c5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ucc_welfare_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsVeWMTN6labDMdawJ27dp51F71hBCVqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

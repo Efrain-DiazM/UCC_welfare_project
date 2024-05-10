@@ -1,6 +1,7 @@
 // import 'package:app_mobile/modules/authentication/screens/login/login.dart';
 // import 'package:app_mobile/modules/products/screens/list_product.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/login/login.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
@@ -18,8 +19,9 @@ class OnBoardingController extends GetxController {
   // }
 
   // void nextPage() {
-  //   if (currentPageIndex.value == 2) {
-  //     // Get.to(const ListProduct());
+  //   print(currentPageIndex);
+  //   if (currentPageIndex.value == 0) {
+  //     Get.to(const LoginScreen());
   //   } else {
   //     int page = currentPageIndex.value + 1;
   //     pageController.jumpToPage(page);

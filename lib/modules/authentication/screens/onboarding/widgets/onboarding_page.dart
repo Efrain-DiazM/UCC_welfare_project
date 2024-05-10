@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/controllers/onboarding/onboarding_controller.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/createAccount/createAccount.dart';
+import 'package:flutter_ucc_welfare_project/modules/authentication/screens/login/login.dart';
 // import 'package:flutter_ucc_welfare_project/modules/authentication/controllers/onboarding/onboarding_controller.dart';
 
 import 'package:flutter_ucc_welfare_project/utils/constants/sizes.dart';
 import 'package:flutter_ucc_welfare_project/utils/constants/text_strings.dart';
 import 'package:flutter_ucc_welfare_project/utils/helpers/helper_functions.dart';
+import 'package:get/get.dart';
 // import 'package:get/get.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -19,6 +23,7 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Get.put(OnBoardingController());
+    final controller = OnBoardingController.instance;
     return Padding(
       padding: const EdgeInsets.all(AppSizes.defaultSpace),
       child: Column(
@@ -47,6 +52,7 @@ class OnBoardingPage extends StatelessWidget {
               Expanded(
                 child: ElevatedButton(
                   onPressed: () {
+                    Get.to(const LoginScreen());
                     // Lógica para iniciar sesión
                   }, 
                   child: Text(AppText.onBoardingLogin),
@@ -56,6 +62,7 @@ class OnBoardingPage extends StatelessWidget {
               Expanded(
                 child: OutlinedButton(
                   onPressed: () {
+                    Get.to(const createAccount());
                     // Lógica para el registro
                   }, 
                   child: Text(AppText.onBoardingRegister),
