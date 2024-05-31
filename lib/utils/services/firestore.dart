@@ -15,3 +15,16 @@ Future<List> getAllCollection({required String nameCollection}) async {
 
   return data;
 }
+
+class FirestoreServics {
+  final FirebaseFirestore _db = FirebaseFirestore.instance;
+
+  Future<void> addDocument(String collectionName, Map<String, dynamic> data) async {
+    await _db.collection(collectionName).add(data);
+  }
+
+  Future<List<Map<String, dynamic>>> getAllCollection(String nameCollection) async {
+    final snapshot = await _db.collection(nameCollection).get();
+    return snapshot.docs.map((doc) => doc.data()).toList();
+  }
+}

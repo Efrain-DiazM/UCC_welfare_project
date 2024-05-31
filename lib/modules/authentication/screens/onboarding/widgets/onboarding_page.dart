@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ucc_welfare_project/modules/aplication/controllers/change_language.dart';
 import 'package:flutter_ucc_welfare_project/modules/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:flutter_ucc_welfare_project/modules/authentication/screens/createAccount/createAccount.dart';
 import 'package:flutter_ucc_welfare_project/modules/authentication/screens/login/login.dart';
@@ -23,54 +24,68 @@ class OnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Get.put(OnBoardingController());
-    final controller = OnBoardingController.instance;
-    return Padding(
-      padding: const EdgeInsets.all(AppSizes.defaultSpace),
-      child: Column(
-        children: [
-          Image(
-            width: HelperFunctions.screenWidth() * 0.8,
-            height: HelperFunctions.screenHeight() * 0.6,
-            image: AssetImage(image),
-          ),
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(height: AppSizes.spaceBtwItems),
-          Text(
-            subTitle,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-
-          const Spacer(), // Añadido para empujar los botones hacia la parte inferior
-          Row(
-            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Expanded(
-                child: ElevatedButton(
-                  onPressed: () {
-                    Get.to(const LoginScreen());
-                    // Lógica para iniciar sesión
-                  }, 
-                  child: Text(AppText.onBoardingLogin),
-                ),
-              ),
-              const SizedBox(width: 8), // Espacio entre botones
-              Expanded(
-                child: OutlinedButton(
-                  onPressed: () {
-                    Get.to(const createAccount());
-                    // Lógica para el registro
-                  }, 
-                  child: Text(AppText.onBoardingRegister),
-                ),
-              ),
-            ],
+    // final controller = OnBoardingController.instance;
+    final ChangeLanguageController changeLanguageController = Get.put(ChangeLanguageController());
+    return Scaffold(
+      appBar: AppBar(
+        // title: Text(AppText.onBoardingTitle),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.translate),
+            onPressed: () {
+              changeLanguageController.changeLanguage(
+                changeLanguageController.locale.value == 'es' ? 'en' : 'es',
+              );
+            },
           ),
         ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(AppSizes.defaultSpace),
+        child: Column(
+          children: [
+            Image(
+              width: HelperFunctions.screenWidth() * 0.8,
+              height: HelperFunctions.screenHeight() * 0.6,
+              image: AssetImage(image),
+            ),
+            Text(
+              title,
+              style: Theme.of(context).textTheme.headlineMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: AppSizes.spaceBtwItems),
+            Text(
+              subTitle,
+              style: Theme.of(context).textTheme.bodyMedium,
+              textAlign: TextAlign.center,
+            ),
+      
+            const Spacer(),
+            Row(
+              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Get.to(const LoginScreen());
+                    }, 
+                    child: Text(AppText.onBoardingLogin),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: OutlinedButton(
+                    onPressed: () {
+                      Get.to(const createAccount());
+                    }, 
+                    child: Text(AppText.onBoardingRegister),
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

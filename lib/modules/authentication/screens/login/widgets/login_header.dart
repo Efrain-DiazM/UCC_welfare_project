@@ -12,17 +12,18 @@ class LoginHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SvgPicture.asset(
-          AppImage.onBoardingImage1,
-          height: 150,
-        ),
-        const SizedBox(height: AppSizes.spaceBtwSections),
+        Image(image: AssetImage(AppImage.loginLogo), height: 150,),
+        // SvgPicture.asset(
+        //   AppImage.loginLogo,
+        //   height: 100,
+        // ),
+        SizedBox(height: AppSizes.spaceBtwSections),
 
         Text(
           AppText.loginTitle,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
-        const SizedBox(height: AppSizes.spaceBtwInputFields),
+        SizedBox(height: AppSizes.spaceBtwInputFields),
 
         Text(
           AppText.loginSubTitle,

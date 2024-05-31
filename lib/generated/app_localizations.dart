@@ -114,14 +114,32 @@ abstract class AppLocalizations {
   /// No description provided for @login.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, loginTitle{Inicia sesión aquí} loginSubTitle{Bienvenido de nuevo, te han echado de menos!} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Olvidaste tu contraseña?} signIn{Iniciar sesión} createAccount{Crear nueva cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  /// **'{name, select, loginTitle{Inicia sesión aquí} loginSubTitle{Bienvenido de nuevo, te han echado de menos!} email{Correo electrónico} password{Contraseña} rememberMe{Recuérdame} forgetPassword{Olvidaste tu contraseña?} signIn{Iniciar sesión} createAccount{Crear nueva cuenta} orSignInWith{O inicie sesión con} loginIncorrect{Usuario / contraseña incorrecta} other{}}'**
   String login(String name);
 
   /// No description provided for @createAccount.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, createAccountTitle{Crear Cuenta} createAccountSubTitle{Crea una cuenta para que puedas registrar tu participacion en actividades} email{Correo electrónico} password{Contraseña} confirmPassword{Confirmar Contraseña} signUp{Registrarse} alreadyAcount{Ya tengo una cuenta} orSignInWith{O inicie sesión con} other{}}'**
+  /// **'{name, select, createAccountTitle{Crear Cuenta} createAccountSubTitle{Crea una cuenta para que puedas registrar tu participacion en actividades} nameAccount{Nombre de usuario} email{Correo electrónico} password{Contraseña} confirmPassword{Confirmar Contraseña} signUp{Registrarse} alreadyAcount{Ya tengo una cuenta} orSignInWith{O inicie sesión con} other{}}'**
   String createAccount(String name);
+
+  /// No description provided for @navigation.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, home{Inicio} event{Eventos} notification{Registro} other{}}'**
+  String navigation(String name);
+
+  /// No description provided for @home.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, carousel{Actualidad, noticicias de la UCC} news{Noticias recientes} close{Cerrar} other{}}'**
+  String home(String name);
+
+  /// No description provided for @codeQR.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, scan{Escanear codigo QR} other{}}'**
+  String codeQR(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

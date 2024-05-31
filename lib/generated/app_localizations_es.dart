@@ -41,6 +41,7 @@ class AppLocalizationsEs extends AppLocalizations {
         'signIn': 'Iniciar sesión',
         'createAccount': 'Crear nueva cuenta',
         'orSignInWith': 'O inicie sesión con',
+        'loginIncorrect': 'Usuario / contraseña incorrecta',
         'other': '',
       },
     );
@@ -54,12 +55,53 @@ class AppLocalizationsEs extends AppLocalizations {
       {
         'createAccountTitle': 'Crear Cuenta',
         'createAccountSubTitle': 'Crea una cuenta para que puedas registrar tu participacion en actividades',
+        'nameAccount': 'Nombre de usuario',
         'email': 'Correo electrónico',
         'password': 'Contraseña',
         'confirmPassword': 'Confirmar Contraseña',
         'signUp': 'Registrarse',
         'alreadyAcount': 'Ya tengo una cuenta',
         'orSignInWith': 'O inicie sesión con',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String navigation(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'home': 'Inicio',
+        'event': 'Eventos',
+        'notification': 'Registro',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String home(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'carousel': 'Actualidad, noticicias de la UCC',
+        'news': 'Noticias recientes',
+        'close': 'Cerrar',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String codeQR(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'scan': 'Escanear codigo QR',
         'other': '',
       },
     );

@@ -41,6 +41,7 @@ class AppLocalizationsEn extends AppLocalizations {
         'signIn': 'Sign In',
         'createAccount': 'Create new account',
         'orSignInWith': 'Or Sign in With',
+        'loginIncorrect': 'The user / password incorrect',
         'other': '',
       },
     );
@@ -54,12 +55,53 @@ class AppLocalizationsEn extends AppLocalizations {
       {
         'createAccountTitle': 'Create Account',
         'createAccountSubTitle': 'Create an account so you can register your participation in activities',
+        'nameAccount': 'Username',
         'email': 'E-Mail',
         'password': 'Password',
         'confirmPassword': 'Confirm Password',
         'signUp': 'Sign Up',
         'alreadyAcount': 'Already have an account',
         'orSignInWith': 'Or Sign in With',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String navigation(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'home': 'Home',
+        'event': 'Events',
+        'notification': 'Record',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String home(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'carousel': 'Current events, UCC news',
+        'news': 'Recent news',
+        'close': 'Close',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String codeQR(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'scan': 'Scan QR code',
         'other': '',
       },
     );
