@@ -1,0 +1,10 @@
+{
+    "appTitle": "My app",
+    "content": "Hello",
+    "onboarding": "{name, select, onBoardingTitle1{Discover your best university version!} onBoardingSubTitle1{Welcome to UCC well-being, where well-being and academic success go hand in hand} onBoardingLogin{Login} onBoardingRegister{Register} other{}}",
+    "login": "{name, select, loginTitle{Login here} loginSubTitle{Welcome back you’ve been missed!} email{E-Mail} password{Password} rememberMe{Remember Me} forgetPassword{Forgot your password?} signIn{Sign In} createAccount{Create new account} orSignInWith{Or Sign in With} loginIncorrect{The user / password incorrect} other{}}",
+    "createAccount": "{name, select, createAccountTitle{Create Account} createAccountSubTitle{Create an account so you can register your participation in activities} nameAccount{Username} email{E-Mail} password{Password} confirmPassword{Confirm Password} signUp{Sign Up} alreadyAcount{Already have an account} orSignInWith{Or Sign in With} other{}}",
+    "navigation": "{name, select, home{Home} event{Events} notification{Record} other{}}",
+    "home": "{name, select, carousel{Current events, UCC news} news{Recent news} close{Close} other{}}",
+    "codeQR": "{name, select, scan{Scan QR code} other{}}"
+}
